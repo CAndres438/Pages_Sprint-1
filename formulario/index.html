@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="./Styles/style.css">
+    <title>reto-2-formulario</title>
+</head>
+<body class="all">
+    <h1 id="title">Formulario Vida Sana</h1>
+
+    <p id="description" class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dicta ducimus maiores saepe, sint beatae! Esse ea
+        facilis porro vitae eligendi similique rerum ratione, voluptatum necessitatibus, saepe, dolores inventore veniam.
+    </p>
+
+    <form id="survey-form">
+        <div class="formulario">
+        <label  id="name-label" for="name">Nombre:</label><input type="text" name="name" id="name" class="form-control" placeholder="Ingresa tu nombre" required>
+        <label  id="email-label" for="email">Email:</label><input type="email" name="email" id="email" class="form-control" placeholder="Ingresa tu correo" required>
+        <label  id="number-label" for="number">Age:</label><input type="number" name="number" id="number" class="form-control" placeholder="Ingresa tu edad" min="18" max="99">
+        <label for="sex" >Sexo:</label><select id="dorpdown" name="sex" class="form-control" required>
+            <option value="Male">Masculino</option>
+            <option value="Female">Femenino</option>
+            <option value="noBinary">No Binario</option>
+        </select>
+        <p>Que tanto se ejercita a la semana?</p>
+        <label>
+            <input name="activity" value="No exercise" type="radio" class="input-radio" checked>
+            No ejercita
+        </label>
+        <label>
+            <input name="activity" value="three" type="radio" class="input-radio" checked>
+            3 veces por semana
+        </label>
+        <label>
+            <input name="activity" value="five" type="radio" class="input-radio" checked>
+            5 veces por semana
+        </label>
+
+        <p>Objetivos</p>
+        <label>
+            <input name="prefer" value="slim down" type="checkbox" class="input-checkbox">
+            Adelgazar
+        </label>
+        <label>
+            <input name="prefer" value="bulk" type="checkbox" class="input-checkbox">
+            Incrementar masa muscular
+        </label>
+        <label>
+            <input name="prefer" value="Deficit" type="checkbox" class="input-checkbox">
+            Definir 
+        </label>
+
+        <label>
+            <input name="prefer" value="Legs" type="checkbox" class="input-checkbox">
+            Mejorar piernas
+        </label>
+
+        <label>
+            <input name="prefer" value="Chest" type="checkbox" class="input-checkbox">
+            Mejorar Pectoral
+        </label>
+
+        <label>
+            <input name="prefer" value="back" type="checkbox" class="input-checkbox">
+            Mejorar Espalda
+        </label>
+
+        <p>Comentarios Adicionales</p>
+        <textarea id="commentsAdd" class="input-textarea" name="commentAdd" placeholder="Ingresa rasgos adicionales">
+
+        </textarea>
+
+        <button type="submit" id="submit" class="submit-button">Enviar</button>
+    </div>
+    </form>
+<div id="Reload">
+
+</div>
+    <script src="./Scripts/script.js"></script>
+</body>
+</html>
